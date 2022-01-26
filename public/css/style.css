@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Inicio do header */
+header {
+    box-shadow: 0px 2px 10px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo h1{
+    display: inline-block;
+    color: #777;
+    font-size: 40px;
+}
+
+header .logo h2 {
+    display:inline-block;
+    color: #777;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+header button.menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: #AAAAAA;
+}
+
+/* Inicio do banner */
+
+main section.banner {
+    padding: 50px 0;
+}
+
+main section.banner .container{
+    position: relative;
+}
+
+main section.banner .slide img {
+    width: 100%;
+}
+
+main section.banner .container .setas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section.banner .container .setas a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(red, green, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Efeito Botão New e Sale */
+a {
+  color:#ffffff;
+  font-size: 25px;
+  text-decoration:none;
+  transition-duration: 2s;
+  transition-delay: 0.5ms;
+  transition-property: color;
+}
+
+a:hover {
+    color:white;
+    font-size: xx-large;
+    opacity:80%;
+    transition-property:color;
+}
+
+#foto1 {
+    display: flex;
+    align-content: center;
+    width: 90%;
+    max-width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    padding: 0px;
+    position: relative;
+}
+
+/* Casas */
+.casas {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+    border: 0px;
+    background-size: 100px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;    
+    position: relative;
+    
+}
+
+.casas, .casaUm, .casaDois{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.casaUm, .casaDois {
+    flex-direction: column;
+    width: 450px;
+    background-color: #EEEEEE;
+}
+
+#fotoCasaUm, #fotoCasaDois {
+    width: 100%;
+}
+
+#textoUm, #textoDois {
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+
+#valorUm, #valorDois {
+    font-size: 25px;
+    border: 0px;
+    margin: 15px;
+    background-size: 100%;
+    
+}
+
+
+#New, #Sale {
+    order: 1;
+    border-radius: 50px;
+    background-color: #51D275;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 41px;
+    margin: 15px;
+    right: 214px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+    line-height:initial;
+    z-index: 11;          
+}
+
+#Sale {
+    background-color: #DC9730;
+}
+
+#fotoCasaUm, #fotoCasaDois {
+    background-size: 100%;
+    margin: 0px 0px 9px 0px;
+    padding: 0px;
+    
+}
+
+/* Your Style */
+.estilosYourStyle {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-size: 100%;    
+}
+
+
+.imageContainerInd, .imageContainerMod, .imageContainerCla {
+    position: relative;
+	width: 100%;
+}
+
+.textoestilosYourStyle{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    
+}
+
+.imageSource{
+    width: 100%;
+    margin:20px;
+}
+
+#Industrial #Modern #Classic {
+    font-size: x-large 25px;
+    z-index: 10;
+    background-size: center;
+    color:#c7c4c4;
+    box-align: center;
+    align-items: center;
+     
+}
+
+/* footer */
+footer {
+    background-color: #333333;
+    color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .mapa iframe{
+    width: 700px;
+    max-width: 100%;
+    height: 300px;
+}
+
+footer .midias{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .midias img{
+    width: 10%;
+}
